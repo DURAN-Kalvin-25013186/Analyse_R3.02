@@ -1,0 +1,25 @@
+class MoyenDeTransport
+{
+public:
+    virtual void seDeplacer() = 0;
+
+    virtual ~MoyenDeTransport() = default;
+};
+
+class Avion : public MoyenDeTransport
+{
+public:
+    void seDeplacer() override
+    {
+        // déplacement de l'avion
+    }
+};
+
+class Bateau : public MoyenDeTransport
+{
+public:
+    void seDeplacer() override
+    {
+        // déplacement du bateau
+    }
+};

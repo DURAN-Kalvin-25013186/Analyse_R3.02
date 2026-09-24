@@ -1,0 +1,9 @@
+class Voiture
+{
+};
+
+class Personne
+{
+private:
+    std::vector<Voiture*> voitures;
+};

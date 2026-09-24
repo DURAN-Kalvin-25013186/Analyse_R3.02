@@ -1,0 +1,11 @@
+class Imprimante
+{
+public:
+    std::string getNom();
+};
+
+class Document
+{
+public:
+    void imprimer(Imprimante& imprimante);
+};

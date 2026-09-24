@@ -1,0 +1,9 @@
+class Joueur
+{
+};
+
+class Equipe
+{
+private:
+    std::vector<Joueur*> joueurs;
+};

@@ -1,0 +1,14 @@
+class Vehicule
+{
+public:
+    void accelerer();
+    void freiner();
+};
+
+class Moto : public Vehicule
+{
+};
+
+class Voiture : public Vehicule
+{
+};

@@ -1,0 +1,18 @@
+#include <memory>
+#include <vector>
+
+class Fichier
+{
+};
+
+class Repertoire
+{
+private:
+    std::vector<std::unique_ptr<Fichier>> fichiers;
+
+public:
+    void ajouterFichier(std::unique_ptr<Fichier> fichier)
+    {
+        fichiers.push_back(std::move(fichier));
+    }
+};
